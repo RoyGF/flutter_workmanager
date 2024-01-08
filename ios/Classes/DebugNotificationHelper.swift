@@ -60,15 +60,15 @@ class DebugNotificationHelper {
             return
         }
 
-        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert]) { (_, _) in }
-        let notificationRequest = createNotificationRequest(
-            identifier: identifier,
-            threadIdentifier: SwiftWorkmanagerPlugin.identifier,
-            title: title,
-            body: body,
-            icon: icon
-        )
-        UNUserNotificationCenter.current().add(notificationRequest, withCompletionHandler: nil)
+        // UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert]) { (_, _) in }
+        // let notificationRequest = createNotificationRequest(
+        //     identifier: identifier,
+        //     threadIdentifier: SwiftWorkmanagerPlugin.identifier,
+        //     title: title,
+        //     body: body,
+        //     icon: icon
+        // )
+        // UNUserNotificationCenter.current().add(notificationRequest, withCompletionHandler: nil)
 
     }
 
